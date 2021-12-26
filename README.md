@@ -17,5 +17,23 @@ NuxtJS + Jest + Playwright + GitHub Actions のサンプルです
 
 - ユニットテスト (Vueのコンポーネントやメソッドのテスト) を jestで実施
 - E2Eテストを Playwright で実施
-  - エラーが出たらスクリーンショットを取って /screenshots フォルダに保存する
+  - エラーが出たらスクリーンショットを取って保存する
 - GitHub Actions で、プルリクエスト作成単位でテストを自動実行
+  - エラーが出たらスクリーンショットフォルダをアップロードする
+
+## フォルダ構成
+
+- .github/workflows
+  - GitHub Actions設定
+- data
+  - メニューのjsonデータ
+- jest.config.js
+  - jest設定
+- playwright.config.js
+  - playwright設定
+- test/jest
+  - jest の ユニットテストファイル
+- test/playwright
+  - playwright の E2Eテストファイル
+- test-results
+  - エラー時のスクリーンショット保存先
