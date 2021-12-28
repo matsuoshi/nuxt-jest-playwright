@@ -28,11 +28,12 @@ export default {
     createGrandMenu(menu) {
       let grandMenu = menu.regular_menu ?? []
 
+      if (this.is_weekday()) {
+        grandMenu = grandMenu.concat(menu.service_menu ?? [])
+      }
+      
       if (this.is_xmas()) {
         grandMenu = grandMenu.concat(menu.xmas_menu ?? [])
-      }
-      else if (this.is_weekday()) {
-        grandMenu = grandMenu.concat(menu.service_menu ?? [])
       }
 
       return grandMenu
@@ -44,7 +45,7 @@ export default {
 
     is_xmas(dayjs = this.$dayjs()) {
       return (
-        dayjs.month() === 11 &&
+        dayjs.month() === 12 &&
         (dayjs.date() === 24 || dayjs.date() === 25)
       )
     }
