@@ -15,7 +15,7 @@ NuxtJS + Jest + Playwright + GitHub Actions のサンプルです
 
 ## 技術的なこと
 
-- ユニットテスト (Vueのコンポーネントやメソッドのテスト) を jestで実施
+- ユニットテスト (Vueのコンポーネントやメソッドのテスト) を Jestで実施
 - E2Eテストを Playwright で実施
   - エラーが出たらスクリーンショットを取って保存する
 - GitHub Actions で、プルリクエスト作成単位でテストを自動実行
@@ -23,14 +23,16 @@ NuxtJS + Jest + Playwright + GitHub Actions のサンプルです
 
 ## フォルダ構成
 
+Nuxt のデフォルト構成 + 以下
+
 - .github/workflows
   - GitHub Actions設定
 - data
   - メニューのjsonデータ
 - jest.config.js
-  - jest設定
+  - Jest設定
 - playwright.config.js
-  - playwright設定
+  - Playwright設定
 - test/jest
   - jest の ユニットテストファイル
 - test/playwright
