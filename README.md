@@ -1,5 +1,7 @@
 # nuxt-jest-playwright
 
+勉強会用のサンプルリポジトリ
+
 NuxtJS + Jest + Playwright + GitHub Actions のサンプルです
 
 ## 仕様
