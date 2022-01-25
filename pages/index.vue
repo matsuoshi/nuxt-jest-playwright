@@ -45,7 +45,7 @@ export default {
 
     is_xmas(dayjs = this.$dayjs()) {
       return (
-        dayjs.month() === 12 &&
+        dayjs.month() === 11 &&
         (dayjs.date() === 24 || dayjs.date() === 25)
       )
     }
